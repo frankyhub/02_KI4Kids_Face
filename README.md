@@ -600,21 +600,18 @@ Lade das Bild (single-person) in dein Arbeitsverszeichnis
 import face_recognition
 from PIL import Image, ImageDraw
 
-# Detecting the faces
 image = face_recognition.load_image_file('single-person.jpg')  # Load the image
 face_locations = face_recognition.face_locations(image)  # Detect the face locations
 first_face_location = face_locations[0]  # Get the first face
 
-# Convert the face_recognition image to a PIL image
 img = Image.fromarray(image, 'RGB')
 
-# Creating the image with red box
 img_with_red_box = img.copy()  # Create a copy of the original image so there is not red box in the cropped image later
 img_with_red_box_draw = ImageDraw.Draw(img_with_red_box)  # Create an image to draw with
 img_with_red_box_draw.rectangle(  # Draw the rectangle on the image
     [
-        (first_face_location[3], first_face_location[0]),  # (left, top)
-        (first_face_location[1], first_face_location[2])  # (right, bottom)
+        (first_face_location[3], first_face_location[0]), 
+        (first_face_location[1], first_face_location[2])  
     ],
     outline="red",  # Make the box red
     width=3  # Make the box 3px in thickness
@@ -644,17 +641,15 @@ Lade group-of-people.jpg in dein Arbeitsverszeichnis
 import face_recognition
 from PIL import Image, ImageDraw
 
-# Load image and detect faces
 image = face_recognition.load_image_file("group-of-people.jpg")
 face_locations = face_recognition.face_locations(image)
 
-# Create the PIL image to copy and crop
 img = Image.fromarray(image, 'RGB')
 
 img_with_red_box = img.copy()  # Make a single copy for all the red boxes
 img_with_red_box_draw = ImageDraw.Draw(img_with_red_box)  # Get our drawing object again
-for face_location in face_locations:  # Loop over all the faces detected this time
-    img_with_red_box_draw.rectangle(  # Draw a rectangle for the current face
+for face_location in face_locations:  
+    img_with_red_box_draw.rectangle(  
         [
             (face_location[3], face_location[0]),
             (face_location[1], face_location[2])
@@ -995,20 +990,16 @@ cap = cv2.VideoCapture("crossing.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
-# Define region points
 region_points = [(150, 150), (1130, 150), (1130, 570), (150, 570)]
 
-# Video writer
 #video_writer = cv2.VideoWriter("object_counting_output.avi", cv2.VideoWriter_fourcc(*"mp4v"), fps, (w, h))
 
-# Init trackzone (object tracking in zones, not complete frame)
 trackzone = solutions.TrackZone(
     show=True,  # display the output
     region=region_points,  # pass region points
     model="yolo11n.pt",
 )
 
-# Process video
 while cap.isOpened():
     success, im0 = cap.read()
     if not success:
@@ -1310,7 +1301,7 @@ import numpy as np
 from PIL import Image
 import os
 import time
-# Path for face image database
+
 #path = 'D:/face/trainer'
 
 #os.chdir("data/haarcascades")
@@ -1319,7 +1310,6 @@ recognizer = cv2.face.LBPHFaceRecognizer_create()
 time.sleep(0.1)
 detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml");
 
-# function to get the images and label data
 def getImagesAndLabels(path):
     imagePaths = [os.path.join(path,f) for f in os.listdir(path)]
     faceSamples=[]
@@ -1337,10 +1327,10 @@ print ("\nTraining faces. It will take few seconds. Wait ...")
 time.sleep(0.1)
 faces,ids = getImagesAndLabels("/home/khf/face/dataset")
 recognizer.train(faces, np.array(ids))
-# Save the model into trainer/trainer.yml
+
 time.sleep(0.1)
 recognizer.write('/home/khf/face/trainer/trainer.yml')
-# Print the numer of faces trained and end program
+
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
 
 
@@ -1382,7 +1372,6 @@ faceCascade = cv2.CascadeClassifier(cascadePath);
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
-#iniciate id counter
 id = 0
 
 # Die Namen eingeben ==> Kim: id=1,  etc
