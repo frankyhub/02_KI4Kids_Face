@@ -1471,7 +1471,7 @@ In einem neuronalen Netz ahmen künstliche Neuronen durch Algorithmen die Nerven
 
 Der Aufbau eines Künstlichen Neuronalen Netzes (KNN) besteht aus den Schichten: Eingabeschicht (Input Layer), verborgene Schicht (Hidden Layer) und Ausgabeschicht (Output Layer).
 
-<img src="pic/knn.png" width="500"> 
+<img src="pic/knn.jpg" width="500"> 
 <br> <br>
 
 ### Eingabeschicht: 
