@@ -1,21 +1,15 @@
- 
 <a name="oben"></a>
 
 <div align="center">
 
-# Personen erkennen mit OpenCV
+|[:skull:ISSUE](https://github.com/frankyhub/02_KI4Kids_Face/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/02_KI4Kids_Face/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/02_KI4Kids_Face/wiki)||
+|--|--|--|--|
+| | | | |
+<a href="https://github.com/frankyhub/02_KI4Kids_Face/issues">![GitHub issues](https://img.shields.io/github/issues/frankyhub/02_KI4Kids_Face)![GitHub closed issues](https://img.shields.io/github/issues-closed/frankyhub/02_KI4Kids_Face)|<a href="https://github.com/frankyhub/02_KI4Kids_Face/discussions">![GitHub Discussions](https://img.shields.io/github/discussions/frankyhub/02_KI4Kids_Face)|<a href="https://github.com/frankyhub/02_KI4Kids_Face/6eleases">![GitHub release (with filter)](https://img.shields.io/github/v/release/frankyhub/02_KI4Kids_Face)|![Static Badge](https://img.shields.io/badge/RepoNr.:-%2093-blue)|
+|![GitHub Created At](https://img.shields.io/github/created-at/frankyhub/02_KI4Kids_Face)| <a href="https://github.com/frankyhub/02_KI4Kids_Face/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/02_KI4Kids_Face/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)||
 
-
-|[:skull:ISSUE](https://github.com/frankyhub/02_KI4Kids_Face/issues?q=is%3Aissue)|[:speech_balloon: Forum /Discussion](https://github.com/frankyhub/02_KI4Kids_Face/discussions)|[:grey_question:WiKi](https://github.com/frankyhub/02_KI4Kids_Face/blob/main/wiki.md)|
-|--|--|--|
-| | | | 
-| <a href="https://github.com/frankyhub/02_KI4Kids_Face/pulse" alt="Activity"><img src="https://img.shields.io/github/commit-activity/m/badges/shields" />| <a href="https://github.com/frankyhub/02_KI4Kids_Face/graphs/traffic"><img alt="ViewCount" src="https://views.whatilearened.today/views/github/frankyhub/github-clone-count-badge.svg">  |<a href="https://github.com/frankyhub?tab=stars"> ![GitHub User's stars](https://img.shields.io/github/stars/frankyhub)|
-
-
-
-![Bild](pic/face.png)
-
-
+<img src="pic/face.png" width="500"> 
+<br> <br>
 
 </div>
 
@@ -31,8 +25,9 @@ Face_recognition ist eine Bibliothek zur Gesichtserkennung in Python. Sie basier
 OpenCV (Open Source Computer Vision Library) ist eine Open-Source-Softwarebibliothek für Computer und maschinelles Lernen. OpenCV wurde entwickelt, um eine gemeinsame Infrastruktur für Computer-Vision-Anwendungen bereitzustellen und den Einsatz von maschineller Wahrnehmung in den kommerziellen Produkten zu beschleunigen. Es verfügt über C++-, Python- und Java-Schnittstellen und unterstützt Windows, Linux, Mac OS, iOS und Android. Dieses Projekt wurde mit der "Open Source Computer Vision Library", der OpenCV, auf einem Raspbarry PI erstellt.
 
 
+<img src="pic/detect.png" width="500"> 
+<br> <br>
 
-![Bild](pic/detect.png)
 
 
 ## Ablauf
@@ -465,7 +460,9 @@ cv2.destroyAllWindows()
 ```
 
 
-![Bild](pic/single.png)
+<img src="pic/single.png" width="500"> 
+<br> <br>
+
 ### Face Detection mit colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DtwjOQWl8N34JyUxtT3rPST7t50pBj1n#scrollTo=LX67m8ihah9F)
@@ -570,7 +567,9 @@ cv2.destroyAllWindows()
 
 ```
 
-![pic](pic/smiley.png)
+<img src="pic/smiley.png" width="500"> 
+<br> <br>
+
 
 ---
 
@@ -1013,7 +1012,9 @@ video_writer.release()
 cv2.destroyAllWindows()
 
 ```
-![Bild](pic/tracking.png)
+
+<img src="pic/tracking.png" width="500"> 
+<br> <br>
 
 ---
 
@@ -1069,10 +1070,11 @@ cv2.destroyAllWindows()
 
 ```
 
-![Bild](pic/person.png)
+<img src="pic/person.png" width="500"> 
+<br> <br>
 
-![Bild](pic/countqueue.png)
-
+<img src="pic/countqueue.png" width="500"> 
+<br> <br>
 
 <!---
 ## Objekte zählen mit der USB-Kamera
@@ -1268,7 +1270,8 @@ cv2.destroyAllWindows()
 
 ```
 
-![bild](pic/facedata.png)
+<img src="pic/facedata.png" width="500"> 
+<br> <br>
 
 
 Im Code ist ein "Eingabebefehl", der eine Benutzer-ID erfasst und eine ganze Zahl (1, 2, 3 usw.) sein sollte. 
@@ -1428,11 +1431,12 @@ cv2.destroyAllWindows()
 
 
 ```
-![bild](pic/kbs.png)
 
-![bild](pic/unknow.png)
+<img src="pic/kbs.png" width="500"> 
+<br> <br>
 
-
+<img src="pic/unknow.png" width="500"> 
+<br> <br>
 
 In den zweiten Beispiel fügen wir ein neues Array ein:
 
@@ -1448,7 +1452,9 @@ Beachte, dass er den Konfidenzindex "Null" zurückgibt, wenn er als perfekte Üb
 ---
 ---
 
-![Bild](pic/Klasse_det.png)
+<img src="pic/Klasse_det.png" width="500"> 
+<br> <br>
+
 ### Face Detection mit colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xvkr4exgFkwMBhs89Z84iLbqdl1sGoMN)
@@ -1465,7 +1471,8 @@ In einem neuronalen Netz ahmen künstliche Neuronen durch Algorithmen die Nerven
 
 Der Aufbau eines Künstlichen Neuronalen Netzes (KNN) besteht aus den Schichten: Eingabeschicht (Input Layer), verborgene Schicht (Hidden Layer) und Ausgabeschicht (Output Layer).
 
-![Bild](/pic/knn.jpg)
+<img src="pic/knn.png" width="500"> 
+<br> <br>
 
 ### Eingabeschicht: 
 Die Eingangsschicht versorgt das neuronale Netz mit den notwendigen Informationen. Die Input-Neuronen verarbeiten die eingegebenen Daten und führen diese gewichtet an die nächste Schicht weiter.   
@@ -1473,7 +1480,8 @@ Die Eingangsschicht versorgt das neuronale Netz mit den notwendigen Informatione
 ### Verborgene Schicht: 
 Die verborgene Schicht befindet sich zwischen der Eingabeschicht und der Ausgabeschicht. Während die Ein- und Ausgabeschicht lediglich aus einer Ebene bestehen, können beliebig viele Ebenen an Neuronen in der verborgenen Schicht vorhanden sein. Hier werden die empfangenen Informationen erneut gewichtet und von Neuron zu Neuron bis zur Ausgabeschicht weitergereicht. Die Gewichtung findet in jeder Ebene der verborgenen Schicht statt. Die genaue Prozessierung der Informationen ist jedoch nicht sichtbar. Daher stammt auch der Name, verborgene Schicht. Während in der Ein- und Ausgabeschicht die eingehenden und ausgehenden Daten sichtbar sind, ist der innere Bereich des Neuronalen Netzes im Prinzip eine Black Box.
 
-![Bild](/pic/sknn.png)
+<img src="pic/sknn.png" width="500"> 
+<br> <br>
 
 ### Ausgabeschicht: 
 Die Ausgabeschicht ist die letzte Schicht und schließt unmittelbar an die letzte Ebene der verborgenen Schicht an. Die Output-Neuronen beinhalten die resultierende Entscheidung, die als Informationsfluss hervorgeht.
@@ -1487,13 +1495,6 @@ Das Ergebnis dieser Berechnung wird an die nächsten Neuronen der nächsten Schi
 Natürlich sind, wie bei jedem maschinellen Lernverfahren, nicht alle Ergebnisse (Outputs) korrekt und es treten Fehler auf. Diese Fehler sind berechenbar, ebenso wie der Anteil eines einzelnen Neurons am Fehler. Im nächsten Lerndurchgang (Deep Learning) wird das Gewicht jedes Neurons so verändert, dass der Fehler minimiert wird.
 
 Im nächsten Durchlauf wird der Fehler erneut gemessen und angepasst. Auf diese Weise „lernt“ das neuronale Netz von Mal zu Mal besser, von den Eingabedaten auf bekannte Ausgabedaten zu schließen.
-
-
-
-
-
-
-
 
 ---
 
